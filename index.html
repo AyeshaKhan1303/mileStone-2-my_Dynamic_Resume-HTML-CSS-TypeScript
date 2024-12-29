@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="container">
+    <h1>My Dynamic Resume</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend><strong>Personal Information</strong></legend>
+            <label for="name"><b>Name:</b></label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br><br>
+            <label for="location"><b>Location:</b></label>
+            <input type="text,number" id="location" placeholder="Enter your location" required>
+            <br><br>
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="phone"><b>Phone:</b></label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            <br><br>
+            <label for="photo"><b>Upload Photo:</b></label>
+            <input type="file" id="photo" accept="image/*" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Education</strong></legend>
+            <label for="matric"><b>Matriculation:</b></label>
+            <input type="text" id="matric" placeholder="Enter your school name" required>
+            <br><br>
+            <label for="intermediate"><b>Intermediate:</b></label>
+            <input type="text" id="intermediate" placeholder="Enter your college name" required>
+            <br><br>
+            <label for="degree"><b>Degree:</b></label>
+            <input type="text" id="degree" placeholder="Enter your degree" required>
+
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Work Experience</strong></legend>
+            <label for="workExperience"><b>Experience:</b></label>
+            <textarea id="workExperience" placeholder="Describe your work experience" rows="4" required></textarea>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><strong>Achievements</strong></legend>
+            <label for="achievements"><b>Achievements:</b></label>
+            <textarea id="achievements" placeholder="Enter your achievements, separated by commas" rows="4" required></textarea>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend><strong>Skills</strong></legend>
+            <label for="skills"><b>Skills:</b></label>
+            <textarea id="skills" placeholder="Enter your skills, separated by commas" rows="4" required></textarea>
+        </fieldset>
+
+        <br>
+
+
+        <br>
+        <button type="submit">Generate Resume</button>
+    </form>
+</div>
+
+<div id="resumePage" class="hidden">
+    <div id="resumeContent">
+        <img id="resumePhoto" class="hidden" src="" alt="Photo">
+
+        <h1 id="resumeName"></h1>
+        <p id="resumeLocation"></p>
+
+        <h2>Personal Information:</h2>
+        <p id="resumeEmail" ></p>
+        <p id="resumePhone"></p>
+
+        <h2>Education:</h2>
+        <p id="resumeMatric"></p>
+        <p id="resumeIntermediate"></p>
+        <p id="resumeDegree"></p>
+        
+        <h2>Work Experience:</h2>
+        <p id="resumeExperience"></p>
+
+        <h2>Achievements:</h2>
+        <p id="resumeAchievements"></p>
+
+        <h2>Skills:</h2>
+        <p id="resumeSkills"></p>
+
+      
+        
+    </div>
+    <button id="resumeEditButton">Edit Resume</button>
+    <button id="printResumeButton">Print Resume</button>
+
+
+</div>
+
+<script src="form.js"></script>
+
+</body>
+</html>

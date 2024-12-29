@@ -1,0 +1,16 @@
+{
+  "name": "my_dynamic_resume_milestone_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "form.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}
